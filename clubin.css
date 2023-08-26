@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(image/glass.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
+@media screen and (max-width:600px){
+    
+    body{
+        background-color: aquamarine;
+    
+    }
+    .map{
+        width: 100%;
+    }
+    nav a{
+        color: blue;
+    }
+}
+
+header{
+    min-height: 30vh;
+    position: relative;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+h1{
+    font-size: 2.5rem;
+    color: white;
+    text-transform: uppercase;
+    margin: 0.9%;
+    padding: right 20px; 
+}
+span{
+    color: white;
+    font-size: 1rem;
+   gap: 2rem;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+    list-style: none;
+}
+nav li{
+    text-decoration: none;
+    padding: 0.5rem;
+}
+nav a{
+    font: 1em sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: white;
+}
+nav a:hover {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.square{
+display: grid;
+justify-items: center;
+margin-top: 0;
+margin-left: 20%;
+margin-top: 0;
+border: 1px solid black;
+background-color: rgb(31, 28, 28);
+border-top-left-radius: 80%;
+border-top-right-radius: 80%;
+border-bottom-left-radius: 0%;
+border-bottom-right-radius: 1%;
+width: 500px;
+height: 500px;
+}
+.square h1{
+    color: white;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.square h2{
+    color: white;
+    padding: 2rem;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.square h3{
+    color: white;
+    padding: 1rem; 
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.square p{
+    color: white;
+    padding: 1rem;
+    margin-bottom: 0rem;
+    text-align: center;
+}
+.square a{
+    border-radius: 10%;
+    background-color: black;
+    border: 1px solid white;
+    padding: 1.2rem;
+    margin-bottom: 0rem;
+    margin-left: 20%;
+    text-align: center;
+}
+.abt{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    margin-top: 4%;
+    margin-bottom: 0.5rem;
+} 
+.title{
+color: white;
+margin-left: 20%;
+}
+.title h1{
+    font-size: 60px;
+    display: block;
+    font-weight: bold;
+}
+.title h2{
+    display: block;
+    padding: 0%;
+}
+.about{
+    color: white;
+    margin-left: 10%;
+    font-size: 16px;
+    display: block;
+}
+@media screen and (max-width: 600px){
+    .abt{flex-direction: column;
+        background-color: aquamarine; 
+    }
+      .title h1, h2{
+            color: rgb(24, 103, 172);
+        }
+        .about p{
+            color: black;
+        }
+        .about span{
+            color: black; 
+        }
+}
+.Whatson{
+    display: grid;
+    background-color: rgb(48, 42, 42);
+    margin: 0;
+}
+.Whatson h1{
+    display: block;
+    text-align: start;
+    margin-left: 15%;
+}
+.Whatson a{
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 60px;
+    color: white;
+}
+.happy, .night{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0;
+    margin: 1rem;
+}
+.happy image{
+    height: 489px;
+    width: 500px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+.happy h1{
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    color: white;
+}
+.happy h2{
+    font-size: 36px;
+    display: block;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.happy p{
+    font-size: 16px;
+    display: block;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 0ch;
+}
+.Whatson button{
+    border-radius: 20%;
+    background-color: black;
+    border: 1px solid white;
+    padding: 0;
+    margin: 0;
+}
+.Whatson button a{
+    color: blue;
+    padding: 0;
+    font-size: 25px;
+}
+.Whatson button a:hover{
+    color: red;
+}
+.night h1{
+    font-size: 24px;
+    display: block;
+    font-weight: bold;
+    color: white;
+}
+.night h2{
+    font-size: 36px;
+    display: block;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.night p{
+    font-size: 16px;
+    display: block;
+    color: white;
+    margin: 0;
+    padding-bottom: 20px;
+    padding-left: 0ch;
+}
+@media screen and (max-width: 600px){
+    .Whatson{
+        display: flex;
+        flex-direction: column;
+        background-color: aquamarine;   
+    }
+    .Whatson a{
+        color: rgb(24, 103, 172);
+    }
+    .Whatson .happy, .night{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .happy h1,.happy h2, .happy p, .night h1,.night h2, .night p{
+        color: #000;
+    }
+    .night h1{
+        font-weight: bold;
+    }
+}
+.grab, .reserve, .details, footer{
+    background-color: rgb(58, 50, 50);
+    margin: 0;
+    padding: 0;
+}
+.grab{
+    margin-bottom: 0;
+}
+.grab h1{
+    color: white;
+    padding: 4rem;
+    font-size: 50px;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.images{
+    display: grid;
+    grid-template-rows: repeat(5,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0;
+    transition:width 2s, height 2s, transform 2s;
+    margin-bottom: 0%;
+   
+}
+@media screen and (max-width: 600px){
+    .images{
+        transition:width 2s, height 2s, transform 2s;
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        
+    }
+}
+.images:hover{
+    transform: scale(2, 3);
+}
+.img1{
+    height: 20cm;
+    width: 15cm;
+    grid-column-start:1 ;
+    grid-column-end:2 ;
+    grid-row-end: 3;
+    grid-row-start: 1;
+}
+.img2{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-end:3 ;
+    grid-row-start: 1; 
+}
+.img3{
+    grid-column-start:3 ;
+    grid-column-end: 4;
+    grid-row-end: 2;
+    grid-row-start:1 ;
+}
+.img4{
+    grid-column-start: 2;
+    grid-column-end:3 ;
+    grid-row-end: 3;
+    grid-row-start: 2; 
+}
+.img5{
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-end: 3;
+    grid-row-start:2 ;
+}
+
+.details{
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5rem;
+    color: white;
+}
+.detail1{
+    list-style: none;
+   
+    
+}
+.detail1 ul{
+    list-style: none; 
+    margin-top: 8%;
+    
+}
+.detail1 a{
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+.detail1 a:hover{
+    color: yellow;
+}
+.hours ul{
+    list-style: none;
+    display: block;
+}
+.connect{
+    display: block;
+}
+.connect h2{
+    margin: 0;
+}
+ .fa-facebook, .fa-instagram{
+    width: 60px;
+    height: 60px;
+    font-size: 32px;
+    color: red;
+}
+@media screen and (max-width: 600px){
+    .details{
+        flex-direction: column;
+        background-color:rgb(119, 71, 71);
+    }
+}
+.reserve h1{
+    color: white;
+    padding: 3rem;
+    font-size: 50px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.reserve1{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    gap: 1rem;
+    justify-items: center;
+    color: white;
+}
+.reserve1 label{
+    padding: 20px;
+    font-size: 36px;
+}
+.reserve1 input{
+    padding-right: 1rem;
+    margin-right:0 ;
+}
+.fom{
+  display: grid;
+  justify-items: center;
+}
+.fom a, .link a{
+    text-decoration: none;
+    font-size: 36px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 0;
+    margin: 0;
+}
+.fom a:hover{
+color: red;
+}
+footer p{
+    text-align: center;
+}
