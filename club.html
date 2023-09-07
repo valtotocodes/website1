@@ -96,34 +96,39 @@
     <section class="reserve">
         <h1>Reserve a Table</h1>
         <form action="#" method="get" class="reserve1">
-            <div class="fom">
-<label for="partysize">Party Size</label>
-<select name="party" id="partysize">
-    <option value="1 guest">1 guest</option>
-    <option value="2 guest">2 guest</option>
-    <option value="3 guest">3 guest</option>
-    <option value="4 guest">4 guest</option>
-    <option value="5 guest">5guest</option>
-</select>
-            </div>
-            <div class="fom">
-                <label for="date">Date</label>
-                <input type="date" id="date" value="date" required>
-            </div>
-<div class="fom">
-            <label for="datetime">Time</label>
-            <input type="datetime" name="datetime" id="datetime">
-            
-            
-        </div>
-        <div class="link"><a href="">Find a Table</a></div>
+            <fieldset class="fom">
+                 <label for="partysize">Party Size <select name="party" id="partysize">
+                    <option value="1 guest">1 guest</option>
+                    <option value="2 guest">2 guest</option>
+                    <option value="3 guest">3 guest</option>
+                    <option value="4 guest">4 guest</option>
+                    <option value="5 guest">5guest</option>
+                </select></label>
+                    
+            </fieldset>
+            <fieldset class="fom">
+               
+                    <label for="date">Date: <input type="date" id="date" value="date" required>
+                    </label>
+                   
+               
+            </fieldset>
+            <fieldset class="fom">
+                    <label for="datetime">Time: <input type="datetime" name="datetime" id="datetime">
+                    </label>
+                   
+            </fieldset>
+            <fieldset class="link">
+                <input type="submit" value="Find a Table">
+            </fieldset>
         </form>
     </section>
     <section class="map">
-            <img src="image/map.png" alt="map" width="1000"
-            height="450">
+        <img src="image/map.png" alt="map" width="1000" height="450">
         <map name="location">
-            <area shape="rectangle" coords="1.1981° S, 36.9274° E" href="https://www.google.com/search?sca_esv=558714157&sxsrf=AB5stBhS4nfeI_71Xa_6IKhDQMxGv5Ne9Q:1692611814201&q=wendani+location&npsic=0&rflfq=1&rldoc=1&rllag=-1196923,36925411,263&tbm=lcl&sa=X&ved=2ahUKEwi65rWvvu2AAxXtN-wKHdlfCcwQtgN6BAgUEAE" alt="map">
+            <area shape="rectangle" coords="1.1981° S, 36.9274° E"
+                href="https://www.google.com/search?sca_esv=558714157&sxsrf=AB5stBhS4nfeI_71Xa_6IKhDQMxGv5Ne9Q:1692611814201&q=wendani+location&npsic=0&rflfq=1&rldoc=1&rllag=-1196923,36925411,263&tbm=lcl&sa=X&ved=2ahUKEwi65rWvvu2AAxXtN-wKHdlfCcwQtgN6BAgUEAE"
+                alt="map">
         </map>
 
     </section>
@@ -139,11 +144,11 @@
         </div>
         <div class="connect">
             <h2>Contact</h2>
-                <div>
-                    <br>07342665778
-                    <br><a href="mailto:veljoy252@gmail.com">veljoy252@gmail.com</a>
-                </div>
-            
+            <div>
+                <br>07342665778
+                <br><a href="mailto:veljoy252@gmail.com">veljoy252@gmail.com</a>
+            </div>
+
             <h5>Stay Connected</h5>
             <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
             <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
@@ -154,7 +159,7 @@
                 <input type="email" name="email" id="email">
                 <a href="">subscribe</a>
             </div>
-                
+
         </div>
         <div class="hours">
             <h3>Opening Hours</h3>
@@ -166,9 +171,10 @@
             <p>500 Terry Francine St. San Francisco, CA 94158</p>
         </div>
     </section>
-   
+
 </body>
 <footer>
     <p>© 2035 by Bar 121</p>
 </footer>
+
 </html>
